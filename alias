@@ -1,0 +1,21 @@
+# Note: alias with _f() should appear as first command, or it would ignore setting before it
+# git related
+alias ga="git add"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gc="git commit"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias go=':;_f(){ git checkout ${1:-"master"} ${@:2}; };_f'
+alias gs="git status"
+alias gv="git log --oneline --all --decorate --graph"
+
+alias ll="ls -l --color=auto"
+alias vi="vim"
+alias tp="TZ=Asia/Taipei"
+
+alias json=':;_f(){ ${@:1} | python -m json.tool | less; };_f'
+alias revive="sudo service httpd restart"
+alias cs="cat ~/.dotfiles/note/cheatsheet"
+alias venv='deactivate 2>/dev/null || . venv/bin/activate'
+alias venv0='deactivate 2>/dev/null || . $(cd -P ../ && pwd)/venv/bin/activate'
