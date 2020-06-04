@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-ln -s ~/.dotfiles/.bashrc ~/bashrc
-ln -s ~/.dotfiles/.bash_profile ~/bash_profile
-ln -s ~/.dotfiles/.inputrc ~/inputrc
+DOTFILE_DIR=$(dirname $(readlink -f $0))
+ln -s $DOTFILE_DIR/bashrc ~/.bashrc
+ln -s $DOTFILE_DIR/bash_profile ~/.bash_profile
+ln -s $DOTFILE_DIR/inputrc ~/.inputrc
