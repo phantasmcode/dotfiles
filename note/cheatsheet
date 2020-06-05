@@ -1,5 +1,16 @@
 venv example
     python3.6 -m venv venv --system-site-packages
 
+vscode remote-ssh infinity reload solution
+    1. kill process
+        ssh [machine]
+            pgrep -f "vscode" | xargs kill
+    2. reset max_user_watches(prevent vscode eats too much memory)
+        sudo vim /etc/sysctl.conf
+            fs.inotify.max_user_watches=8192
+        sudo sysctl -p
+        cat /proc/sys/fs/inotify/max_user_watches
+    3. remove ~/.vscode-server folder
+
 make command show TZ/TP
     TZ=Asia/Taipei [command]

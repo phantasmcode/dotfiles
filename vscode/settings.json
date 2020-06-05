@@ -1,0 +1,36 @@
+{
+    // Common
+    "editor.rulers": [80, 100],
+    "editor.fontSize": 18,
+    "editor.columnSelection": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.fontSize": 18,
+    "files.eol": "\n",
+    "window.zoomLevel": 0,
+    "git.ignoreLegacyWarning": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    // Languages
+    "python.dataScience.askForKernelRestart": false,
+    "files.associations": {
+        "*.cgi": "perl"
+    },
+    "simple-perl.perltidyArgs": [
+        "-q", "-bar", "-ci=4", "-noll", "-nsbl", "-nsfs", "-bt=2"
+    ],
+    "simple-perl.perlcritic": "",
+    // Extensions
+    "extensions.ignoreRecommendations": false,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "vsnotes.defaultNotePath": "d:\\notes",
+    // Remote SSH
+    "remote.SSH.useLocalServer": false,
+    // Liveshare
+    "liveshare.anonymousGuestApproval": "accept",
+    "liveshare.connectionMode": "relay",
+    "liveshare.populateGitCoAuthors": "never",
+    "peacock.vslsShareColor": "#832561",
+    "peacock.vslsJoinColor": "#215732"
+}
