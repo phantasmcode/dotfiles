@@ -11,11 +11,12 @@ alias gs="git status"
 alias gv="git log --oneline --all --decorate --graph"
 
 alias ll="ls -l --color=auto"
+alias lf=':;_f(){ ls -ld --color=auto ${1:-$PWD}/* ${1:-$PWD}/.[^.]* ${@:2} 2>/dev/null; };_f'
+alias sc="source ~/.bashrc"
 alias vi="vim"
 alias tp="TZ=Asia/Taipei"
 
 alias json=':;_f(){ ${@:1} | python -m json.tool | less; };_f'
 alias revive="sudo service httpd restart"
-alias cs="cat ~/.dotfiles/note/cheatsheet"
+alias cs="cat $DOTFILES_DIR/note/cheatsheet"
 alias venv='deactivate 2>/dev/null || . venv/bin/activate'
-alias venv0='deactivate 2>/dev/null || . $(cd -P ../ && pwd)/venv/bin/activate'
